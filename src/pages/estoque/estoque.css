@@ -1,0 +1,17 @@
+.text-process {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20%;
+    font-weight: bold;
+    font-family: "Inter";
+}
+
+.div-process {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Inter";
+}

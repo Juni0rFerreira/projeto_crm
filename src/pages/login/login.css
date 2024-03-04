@@ -1,0 +1,267 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Estilos do formulário de login */
+.login {
+    background: linear-gradient(to bottom, #3F53A0, #011C51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form-wrap {
+    background-color: #5D6EA2;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.login-form {
+    margin: 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Estilos de links */
+a,
+a:link,
+a:visited,
+a:active,
+a:focus,
+a:hover,
+a:link:focus,
+a:link:hover,
+a:visited:focus,
+a:visited:hover,
+a:active:focus,
+a:active:hover {
+    color: #3ca9e2;
+    transition: all 0.2s ease;
+}
+
+a:focus,
+a:hover,
+a:link:focus,
+a:link:hover,
+a:visited:focus,
+a:visited:hover,
+a:active:focus,
+a:active:hover {
+    color: #329dd5;
+}
+
+/* Estilos do cabeçalho do login */
+.login-header {
+    margin: 10px;
+}
+
+/* Estilos dos campos de input */
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 8px;
+}
+
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 0 10px;
+    margin: 10px 0;
+    color: #000;
+    border: 2px solid #9D9D9D;
+    font-style: normal;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    background: white;
+}
+
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: black;
+}
+
+/* Estilos do botão de login */
+.btn-login {
+    background-color: #F79007;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 59px;
+    width: 100%;
+}
+
+.btn-login:hover {
+    background-color: #FBB04C;
+    transition: all 0.2s ease;
+}
+
+/* Estilos do título do login */
+.login-titulo {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* Estilos do subtítulo do login */
+.login-subtitulo {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px 0px 30px 0px;
+}
+
+/* Estilos do rótulo dos campos de input */
+.input-label {
+    color: #FFFFFF;
+    text-align: start;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Estilos do texto de rótulo */
+.label-text {
+    color: #9D9D9D !important;
+    text-decoration: none;
+}
+
+/* Estilos do rótulo de cadastro */
+.label-cadastro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos do texto de clique */
+.label-click {
+    text-decoration: none;
+    color: #F79007 !important;
+}
+
+.label-click:hover {
+    color: #FBB04C !important;
+}
+
+/* Tornando o formulário responsivo */
+@media only screen and (max-width: 992px) {
+    .login-form-wrap {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .login-form {
+        margin: 5%;
+    }
+
+    .btn-login {
+        font-size: 20px;
+        padding: 8px;
+        margin-top: 20px;
+    }
+
+    .login-titulo {
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    .login-subtitulo {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .input-label {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .login-form-wrap {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .login-form {
+        margin: 5%;
+    }
+
+    .btn-login {
+        font-size: 18px;
+        padding: 8px;
+        margin-top: 15px;
+    }
+
+    .login-titulo {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .login-subtitulo {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .input-label {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-form-wrap {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .login-form {
+        margin: 5%;
+    }
+
+    .btn-login {
+        font-size: 16px;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+    .login-titulo {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .login-subtitulo {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .input-label {
+        font-size: 12px;
+    }
+}
